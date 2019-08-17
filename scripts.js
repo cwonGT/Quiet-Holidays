@@ -29,8 +29,8 @@ function getMonthSelected(){
 function displayPage2(){
   changeViewablePage('page2');
   document.getElementById('monthSelected').innerHTML = monthSelected;
-  document.getElementById('regionSelected').innerHTML = regionSelected;
-  document.getElementById('popularList').innerHTML = "These are the most popular regions to visit during Feb";
+  document.getElementById('choose').innerHTML = "CHOOSE A REGION";
+  document.getElementById('popularList').innerHTML = "These are the most popular regions to visit during " + monthSelected;
 }
 
 function displayPage3(){
