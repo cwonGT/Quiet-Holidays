@@ -23,23 +23,20 @@
     <article class="page" id="page1">
         <header class="banner" id="page1Banner"></header>
         <p>What time of year are you traveling?</p>
-        <div class="dropdown">
-            <button onclick="TimeOfyearDropdown()" class="dropbtn">Select Month</button>
-            <div id="myDropdown" class="dropdown-content">
-                <a href="#" onclick="setMonthSelected('January'); displayPage2()" id="January">January</a>
-                <a href="#" onclick="setMonthSelected('February'); displayPage2()" id="February">February</a>
-                <a href="#" onclick="setMonthSelected('March'); displayPage2()" id="March">March</a>
-                <a href="#" onclick="setMonthSelected('April'); displayPage2()" id="April">April</a>
-                <a href="#" onclick="setMonthSelected('May'); displayPage2()" id="May">May</a>
-                <a href="#" onclick="setMonthSelected('June'); displayPage2()" id="June">June</a>
-                <a href="#" onclick="setMonthSelected('July'); displayPage2()" id="July">July</a>
-                <a href="#" onclick="setMonthSelected('August'); displayPage2()" id="August">August</a>
-                <a href="#" onclick="setMonthSelected('September'); displayPage2()" id="September">September</a>
-                <a href="#" onclick="setMonthSelected('October'); displayPage2()" id="October">October</a>
-                <a href="#" onclick="setMonthSelected('November'); displayPage2()" id="November">November</a>
-                <a href="#" onclick="setMonthSelected('December'); displayPage2()" id="December">December</a>
-            </div>
-        </div>
+        <div class="btn-group-vertical">
+            <button type="button" class="btn btn-primary"onclick="setMonthSelected('January'); displayPage2()">January</button>
+            <button type="button" class="btn btn-primary"onclick="setMonthSelected('February'); displayPage2()">February</button>
+            <button type="button" class="btn btn-primary"onclick="setMonthSelected('March'); displayPage2()">March</button>
+            <button type="button" class="btn btn-primary"onclick="setMonthSelected('April'); displayPage2()">April</button>
+            <button type="button" class="btn btn-primary"onclick="setMonthSelected('May'); displayPage2()">May</button>
+            <button type="button" class="btn btn-primary"onclick="setMonthSelected('June'); displayPage2()">June</button>
+            <button type="button" class="btn btn-primary"onclick="setMonthSelected('July'); displayPage2()">July</button>
+            <button type="button" class="btn btn-primary"onclick="setMonthSelected('August'); displayPage2()">August</button>
+            <button type="button" class="btn btn-primary"onclick="setMonthSelected('September'); displayPage2()">September</button>
+            <button type="button" class="btn btn-primary"onclick="setMonthSelected('October'); displayPage2()">October</button>
+            <button type="button" class="btn btn-primary"onclick="setMonthSelected('November'); displayPage2()">November</button>
+            <button type="button" class="btn btn-primary"onclick="setMonthSelected('December'); displayPage2()">December</button>
+        </div> 
     </article>
 
     <article style="display: none" class="page" id="page2">
