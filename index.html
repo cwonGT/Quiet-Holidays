@@ -48,15 +48,13 @@
             <h2 id="choose"></h2>
             <h3 id="popularList"></h3>
         </header>
-        <ol id="regionList">
-
-            <li><a href="#" onclick="setRegionSelected('Northland'); displayPage3()" id="region1">Northland</a></li>
-            <li><a href="#" onclick="setRegionSelected('Auckland'); displayPage3()" id="region2">Auckland</a></li>
-            <li><a href="#" onclick="setRegionSelected('Wellington'); displayPage3()" id="region3">Wellington</a></li>
-            <li><a href="#" onclick="setRegionSelected('Otago'); displayPage3()" id="region4">Otago</a></li>
-            <li><a href="#" onclick="setRegionSelected('Manawatu-Wanganui'); displayPage3()"
-                    id="region5">Manawatu-Wanganui</a></li>
-        </ol>
+        <div class="btn-group-vertical">
+            <button type="button" class="btn btn-primary" onclick="displayPage3()" id="region1">Northland</button>
+            <button type="button" class="btn btn-primary" onclick="displayPage3()" id="region1">Auckland</button>
+            <button type="button" class="btn btn-primary" onclick="displayPage3()" id="region1">Wellington</button>
+            <button type="button" class="btn btn-primary" onclick="displayPage3()" id="region1">Otago</button>
+            <button type="button" class="btn btn-primary" onclick="displayPage3()" id="region1">Manawatu-Wanganui</button>
+        </div>
     </article>
 
     <article style="display: none" class="page" id="page3">
@@ -66,7 +64,7 @@
             <h4>These are the most popular cities in the Auckland region.</h4>
         </header>
         <div class="btn-group-vertical">
-                <button type="button" class="btn btn-primary"onclick="displayPage4()">Wellington</button>
+                <button   class="btn btn-primary"onclick="displayPage4()">Wellington</button>
                 <button type="button" class="btn btn-primary"onclick="displayPage4()">Hamilton</button>
                 <button type="button" class="btn btn-primary"onclick="displayPage4()">Christchurch</button>
                 <button type="button" class="btn btn-primary"onclick="displayPage4()">Whangarei</button>
