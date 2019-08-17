@@ -19,8 +19,9 @@ function setMonthSelected(month){
 }
 
 function getMonthSelected(){
-  console.log(monthSelected);
+  return monthSelected;
 }
+
 
 function displayPage2(){
   changeViewablePage('page2');
@@ -33,22 +34,28 @@ function displayPage3(){
   document.getElementById('RegionPage3').innerHTML = regionSelected;
 }
 
+function displayPage4(){
+  changeViewablePage('page4');
+  document.getElementById('MonthPage4').innerHTML = monthSelected;
+  document.getElementById('RegionPage4').innerHTML = regionSelected;
+}
+
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function TimeOfyearDropdown() {
     document.getElementById("myDropdown").classList.toggle("show");
-  }
+}
   
-  // Close the dropdown menu if the user clicks outside of it
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
       }
     }
-  } 
+  }
+} 

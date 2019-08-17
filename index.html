@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <script defer type="text/javascript" src="scripts.js"></script>
-     <link rel="stylesheet" href="style.css">
-     <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
 </head>
 <body>
     <button id="testButton" style="display: none" onclick="setMonthSelected()">
@@ -12,8 +12,9 @@
     <button id="testButton" style="display: none" onclick="getMonthSelected()">
         check current month
     </button>
-    </form>
-    <article id="page1">
+
+    <article class="page" id="page1">
+        <header class="banner" id="page1Banner"></header>
         <p>What time of year are you traveling?</p>
         <div class="dropdown">
             <button onclick="TimeOfyearDropdown()" class="dropbtn">Select Month</button>
@@ -33,28 +34,58 @@
             </div>
         </div> 
     </article>
-    <article style="display: none" id="page2">
+
+    <article style="display: none" class="page" id="page2">
         <header>
             <h1 id='monthSelected'></h1>
         </header>
         <ol id="regionList">
-            <li id="region1">Coffee</li>
+            <li><a href="#" onclick="displayPage3()">Auckland</a></li>
             <li id="region1">Tea</li>
             <li id="region1">Milk</li>
             <li id="region1">Milk</li>
             <li id="region1">Milk</li>
         </ol> 
     </article>
-    <article id="page3">
-    <article style="display: none" id="page3">
-        <p id="MonthPage3"></p>
-        <p id="RegionPage3"></p>
+
+    <article style="display: none" class="page" id="page3">
+        <header class="banner" id="page3Banner">
+            <p id="MonthPage3"></p>
+            <p id="RegionPage3"></p>
+            <h4>These are the most popular cities in the Auckland region.</h4>
+        </header>
         <ol id="cityList">
-            <li><a>Auckland</a></li>
-            <li><a>Wellington</a></li>
-            <li><a>Hamilton</a></li>
-            <li><a>Christchurch</a></li>
-            <li><a>Whangarei</a></li>
+            <li><a href="#" onclick="displayPage4()">Auckland</a></li>
+            <li><a href="#" onclick="displayPage4()">Wellington</a></li>
+            <li><a href="#" onclick="displayPage4()">Hamilton</a></li>
+            <li><a href="#" onclick="displayPage4()">Christchurch</a></li>
+            <li><a href="#" onclick="displayPage4()">Whangarei</a></li>
         </ol> 
     </article>
+
+    <article style="display: none" class="page" id="page4">
+        <p id="MonthPage4"></p>
+        <p id="RegionPage4"></p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/New_Auckland_Infobox_Pic_Montage_3.jpg/1024px-New_Auckland_Infobox_Pic_Montage_3.jpg?1566027573028"/>
+        <p>
+            Auckland's Population: 1.65 million.
+            climate: subtropical, expect heavy rain between May-December.
+
+            Popular activities in Auckland:
+                Auckland Art Gallery.
+                Walking tours.
+                Auckland Zoo.
+                MOTAT.
+                Maritime Museum.
+
+            Events on in February:
+
+            Mt.Eden Village Wellbeing Market,
+            Voxnova-Gypsy Jazz Concert,
+            Accelerate: Driving New Zealand, a MOTAT exhibition.
+
+        </p>
+    </article>
+    
 </body>
+</html>
