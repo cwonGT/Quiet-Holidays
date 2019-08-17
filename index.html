@@ -18,7 +18,7 @@
         <div class="dropdown">
             <button onclick="TimeOfyearDropdown()" class="dropbtn">Select Month</button>
             <div id="myDropdown" class="dropdown-content">
-                <a href="#" onclick="setMonthSelected('Jan'); displayPage2()" id="January">January</a>
+                <a href="#" onclick="setMonthSelected('January'); displayPage2()" id="January">January</a>
                 <a href="#" onclick="setMonthSelected('February'); displayPage2()" id="February">February</a>
                 <a href="#" onclick="setMonthSelected('March'); displayPage2()" id="March">March</a>
                 <a href="#" onclick="setMonthSelected('April'); displayPage2()" id="April">April</a>
@@ -46,10 +46,15 @@
         </ol> 
     </article>
     <article id="page3">
+    <article style="display: none" id="page3">
         <p id="MonthPage3"></p>
         <p id="RegionPage3"></p>
+        <ol id="cityList">
+            <li><a>Auckland</a></li>
+            <li><a>Wellington</a></li>
+            <li><a>Hamilton</a></li>
+            <li><a>Christchurch</a></li>
+            <li><a>Whangarei</a></li>
+        </ol> 
     </article>
-
-
-
 </body>
