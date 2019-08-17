@@ -1,6 +1,7 @@
 //GLOBALS
 let toHide = 'page1';
-const monthSelected = "Jan";
+let monthSelected = "Jan";
+let regionSelected = "Auckland";
 
 function changeViewablePage(currentPage) {
     if(currentPage == toHide) {return;}
@@ -22,8 +23,9 @@ function getMonthSelected(){
 }
 
 function displayPage3(){
-  document.getElementById('MonthPage3').innerHTML = getMonthSelected();
-  document.getElementById('RegionPage3').innerHTML = getMonthSelected();
+  changeViewablePage('page3');
+  document.getElementById('MonthPage3').innerHTML = monthSelected;
+  document.getElementById('RegionPage3').innerHTML = regionSelected;
 }
 
 /* When the user clicks on the button,
