@@ -22,6 +22,11 @@ function getMonthSelected(){
   console.log(monthSelected);
 }
 
+function displayPage2(){
+  changeViewablePage('page2');
+  document.getElementById('monthSelected').innerHTML = monthSelected;
+}
+
 function displayPage3(){
   changeViewablePage('page3');
   document.getElementById('MonthPage3').innerHTML = monthSelected;
