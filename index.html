@@ -6,31 +6,39 @@
      <meta charset="utf-8" />
 </head>
 <body>
-    <button id="testButton" onclick="testClick()">
+    <button id="testButton" style="display: none" onclick="setMonthSelected()">
         click me
     </button>
-    <form>
-        Search Destinations:
-        <input>
+    <button id="testButton"  onclick="getMonthSelected()">
+        check current month
+    </button>
     </form>
     <article id="page1">
+        <p>What time of year are you traveling?</p>
         <div class="dropdown">
-            <button onclick="TimeOfyearDropdown()" class="dropbtn">Dropdown</button>
+            <button onclick="TimeOfyearDropdown()" class="dropbtn">Select Month</button>
             <div id="myDropdown" class="dropdown-content">
-                <a href="#" onclick="testClick('Jan')" id="January">January</a>
-                <a href="#" id="February">February</a>
-                <a href="#" id="March">March</a>
-                <a href="#" id="April">April</a>
-                <a href="#" id="May">May</a>
-                <a href="#" id="June">June</a>
-                <a href="#" id="July">July</a>
-                <a href="#" id="August">August</a>
-                <a href="#" id="September">September</a>
-                <a href="#" id="October">October</a>
-                <a href="#" id="November">November</a>
-                <a href="#" id="December">December</a>
+                <a href="#" onclick="setMonthSelected('Jan'); displayPage2()" id="January">January</a>
+                <a href="#" onclick="setMonthSelected('February'); displayPage2()" id="February">February</a>
+                <a href="#" onclick="setMonthSelected('March'); displayPage2()" id="March">March</a>
+                <a href="#" onclick="setMonthSelected('April'); displayPage2()" id="April">April</a>
+                <a href="#" onclick="setMonthSelected('May'); displayPage2()" id="May">May</a>
+                <a href="#" onclick="setMonthSelected('June'); displayPage2()" id="June">June</a>
+                <a href="#" onclick="setMonthSelected('July'); displayPage2()" id="July">July</a>
+                <a href="#" onclick="setMonthSelected('August'); displayPage2()" id="August">August</a>
+                <a href="#" onclick="setMonthSelected('September'); displayPage2()" id="September">September</a>
+                <a href="#" onclick="setMonthSelected('October'); displayPage2()" id="October">October</a>
+                <a href="#" onclick="setMonthSelected('November'); displayPage2()" id="November">November</a>
+                <a href="#" onclick="setMonthSelected('December'); displayPage2()" id="December">December</a>
             </div>
         </div> 
+    </article>
+
+    <article id="page3">
+        <header>hello</header>
+        <p id="MonthPage3"></p>
+        <p id="RegionPage3"></p>
+
     </article>
 
 

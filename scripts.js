@@ -1,6 +1,6 @@
 //GLOBALS
 let toHide = 'page1';
-let monthSelected = "Jan";
+const monthSelected = "Jan";
 
 function changeViewablePage(currentPage) {
     if(currentPage == toHide) {return;}
@@ -9,9 +9,23 @@ function changeViewablePage(currentPage) {
     toHide = currentPage;
 }
 
-function testClick(e){
-    console.log("hello", e)
-} 
+function testClick(){
+    console.log("hello")
+}
+
+function setMonthSelected(month){
+  monthSelected = month;
+}
+
+function getMonthSelected(){
+  console.log(monthSelected);
+}
+
+function displayPage3(){
+  document.getElementById('MonthPage3').innerHTML = getMonthSelected();
+  document.getElementById('RegionPage3').innerHTML = getMonthSelected();
+}
+
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function TimeOfyearDropdown() {
