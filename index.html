@@ -35,14 +35,16 @@
     </article>
     <article style="display: none" id="page2">
         <header>
-            <h1 id='monthSelected'></h1>
+            <h1 id="monthSelected"></h1>
+            <h2 id="choose">CHOOSE A REGION</h2>
+            <h3 id="popularList"></h3>
         </header>
         <ol id="regionList">
-            <li id="region1">Coffee</li>
-            <li id="region1">Tea</li>
-            <li id="region1">Milk</li>
-            <li id="region1">Milk</li>
-            <li id="region1">Milk</li>
+            <li><a href="#" onclick="setRegionSelected('Northland'); displayPage3()" id="region1">Northland</a></li>
+            <li><a href="#" onclick="setRegionSelected('Auckland'); displayPage3()" id="region2">Auckland</a></li>
+            <li><a href="#" onclick="setRegionSelected('Wellington'); displayPage3()" id="region3">Wellington</a></li>
+            <li><a href="#" onclick="setRegionSelected('Otago'); displayPage3()" id="region4">Otago</a></li>
+            <li><a href="#" onclick="setRegionSelected('Manawatu-Wanganui'); displayPage3()" id="region5">Manawatu-Wanganui</a></li>
         </ol> 
     </article>
     <article id="page3">

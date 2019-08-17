@@ -18,6 +18,10 @@ function setMonthSelected(month){
   monthSelected = month;
 }
 
+function setRegionSelected(region){
+  regionSelected = region;
+}
+
 function getMonthSelected(){
   console.log(monthSelected);
 }
@@ -25,6 +29,8 @@ function getMonthSelected(){
 function displayPage2(){
   changeViewablePage('page2');
   document.getElementById('monthSelected').innerHTML = monthSelected;
+  document.getElementById('regionSelected').innerHTML = regionSelected;
+  document.getElementById('popularList').innerHTML = "These are the most popular regions to visit during Feb";
 }
 
 function displayPage3(){
@@ -40,15 +46,15 @@ function TimeOfyearDropdown() {
   }
   
   // Close the dropdown menu if the user clicks outside of it
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
       }
     }
-  } 
+  }
+} 
