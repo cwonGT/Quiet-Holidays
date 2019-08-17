@@ -21,7 +21,9 @@
         check current month
     </button>
     <article class="page" id="page1">
-        <header class="banner" id="page1Banner"></header>
+        <header class="banner" id="page1Banner">
+
+        </header>
         <p>What time of year are you traveling?</p>
         <div class="btn-group-vertical">
             <button type="button" class="btn btn-primary"onclick="setMonthSelected('January'); displayPage2()">January</button>
@@ -40,7 +42,7 @@
     </article>
 
     <article style="display: none" class="page" id="page2">
-        <header>
+        <header class="banner">
             <h1 id="monthSelected"></h1>
             <h2 id="choose"></h2>
             <h3 id="popularList"></h3>
@@ -77,6 +79,9 @@
     </article>
 
     <article style="display: none" class="page" id="page4">
+        <header class="banner" id="page4Banner">
+            
+        </header>
         <p id="MonthPage4"></p>
         <p id="RegionPage4"></p>
         <img
