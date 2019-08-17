@@ -11,8 +11,7 @@
     </button>
     <button id="testButton" style="display: none" onclick="getMonthSelected()">
         check current month
-    </button>
-
+  </button>
     <article class="page" id="page1">
         <header class="banner" id="page1Banner"></header>
         <p>What time of year are you traveling?</p>
@@ -37,17 +36,19 @@
 
     <article style="display: none" class="page" id="page2">
         <header>
-            <h1 id='monthSelected'></h1>
+            <h1 id="monthSelected"></h1>
+            <h2 id="choose">CHOOSE A REGION</h2>
+            <h3 id="popularList"></h3>
         </header>
         <ol id="regionList">
-            <li><a href="#" onclick="displayPage3()">Auckland</a></li>
-            <li id="region1">Tea</li>
-            <li id="region1">Milk</li>
-            <li id="region1">Milk</li>
-            <li id="region1">Milk</li>
+
+            <li><a href="#" onclick="setRegionSelected('Northland'); displayPage3()" id="region1">Northland</a></li>
+            <li><a href="#" onclick="setRegionSelected('Auckland'); displayPage3()" id="region2">Auckland</a></li>
+            <li><a href="#" onclick="setRegionSelected('Wellington'); displayPage3()" id="region3">Wellington</a></li>
+            <li><a href="#" onclick="setRegionSelected('Otago'); displayPage3()" id="region4">Otago</a></li>
+            <li><a href="#" onclick="setRegionSelected('Manawatu-Wanganui'); displayPage3()" id="region5">Manawatu-Wanganui</a></li>
         </ol> 
     </article>
-
     <article style="display: none" class="page" id="page3">
         <header class="banner" id="page3Banner">
             <p id="MonthPage3"></p>
@@ -62,7 +63,6 @@
             <li><a href="#" onclick="displayPage4()">Whangarei</a></li>
         </ol> 
     </article>
-
     <article style="display: none" class="page" id="page4">
         <p id="MonthPage4"></p>
         <p id="RegionPage4"></p>
@@ -86,6 +86,5 @@
 
         </p>
     </article>
-    
 </body>
 </html>

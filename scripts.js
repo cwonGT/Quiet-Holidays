@@ -18,14 +18,19 @@ function setMonthSelected(month){
   monthSelected = month;
 }
 
+function setRegionSelected(region){
+  regionSelected = region;
+}
+
 function getMonthSelected(){
   return monthSelected;
 }
 
-
 function displayPage2(){
   changeViewablePage('page2');
   document.getElementById('monthSelected').innerHTML = monthSelected;
+  document.getElementById('choose').innerHTML = "CHOOSE A REGION";
+  document.getElementById('popularList').innerHTML = "These are the most popular regions to visit during " + monthSelected;
 }
 
 function displayPage3(){
@@ -45,7 +50,7 @@ toggle between hiding and showing the dropdown content */
 function TimeOfyearDropdown() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
-  
+
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
