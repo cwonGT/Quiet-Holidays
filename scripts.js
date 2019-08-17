@@ -1,4 +1,7 @@
+//GLOBALS
 let toHide = 'page1';
+let monthSelected = "Jan";
+
 function changeViewablePage(currentPage) {
     if(currentPage == toHide) {return;}
     document.getElementById(currentPage).style.display = "block";
@@ -6,8 +9,8 @@ function changeViewablePage(currentPage) {
     toHide = currentPage;
 }
 
-function testClick(){
-    console.log("hello")
+function testClick(e){
+    console.log("hello", e)
 } 
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
