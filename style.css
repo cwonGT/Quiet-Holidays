@@ -54,7 +54,9 @@
   height: auto;
   width:auto;
 }
-.imageWrapper{
+
+.imageWrapperpage21{
+  /* Bay of plenty */
   position: relative;
   height: 286px;
   background-size: cover;
@@ -63,6 +65,49 @@
   /* border-top: 10px solid green;  */
 }
 
+.imageWrapperPage22{
+  /* Acukland */
+  position: relative;
+  height: 286px;
+  background-size: cover;
+  /* width: 100%; */
+  background-image: url("aucklandpage2.png");
+  /* border-top: 10px solid green;  */
+}
+.imageWrapperPage23{
+  /* Otago */
+  position: relative;
+  height: 286px;
+  background-size: cover;
+  /* width: 100%; */
+  background-image: url("otago2.png");
+  /* border-top: 10px solid green;  */
+}
+.imageWrapperPage24{
+  /* Manawatu-Whanganui */
+  position: relative;
+  height: 286px;
+  background-size: cover;
+  /* width: 100%; */
+  background-image: url("mana.png");
+  /* border-top: 10px solid green;  */
+}
+.text {
+    /* font-size:  */
+  /* margin-top: 20px; */
+  padding-bottom: 10px;
+  text-align: left;
+  padding-left: 20px;
+  /* font-family: "Helvetica Neue"; */
+}
+
+.header{
+  border-top: 2px solid yellow;
+  width: 100%;
+  padding-left: 20px;
+  text-align: left;
+  padding-bottom: 0px;
+}
 
 #page2Header1 {
   border-top: 2px solid yellow;
@@ -71,6 +116,7 @@
   text-align: left;
   padding-bottom: 0px;
 }
+
 #par2Text1{
   /* font-size:  */
   /* margin-top: 20px; */
@@ -79,6 +125,7 @@
   padding-left: 20px;
   /* font-family: "Helvetica Neue"; */
 }
+
 
 .header{
   position: absolute;

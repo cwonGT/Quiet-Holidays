@@ -2,6 +2,8 @@
 let toHide = 'page1';
 let monthSelected = "Jan";
 let regionSelected = "Auckland";
+let regions = ['Bay of Plenty', 'Auckland', 'Otago', 'Manawatu-Wanganui']
+let cities = ['Auckland city', 'Waiheke Island', 'Manukau', 'North Shore']
 
 function changeViewablePage(currentPage) {
     if(currentPage == toHide) {return;}
