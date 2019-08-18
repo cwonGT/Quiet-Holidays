@@ -16,7 +16,8 @@
 <body>
     <article class="page" id="page1">
         <header class="banner" id="page1Banner">
-            <h2>What time of year are you traveling?</2>
+            <h2 id="appName">QSCAPE</h2>
+            <h4 id="timeQuestion">When are you travelling?</h4>
         </header>
         <div class="buttonWrapper">
             <button type="button" class="btn"onclick="setMonthSelected('January'); displayPage2()">January</button>
@@ -60,15 +61,13 @@
                     Otago offers a distinct South Island lifestyle and an alternative to more heavily populated northern areas.
                 </p>
         </div>
+
         <div onclick="displayPage3('Manawatu-Wanganui')" class="imageWrapperPage24">
             <p class="header" id="page2Header1">Manawatu-Wanganui</p>
             <p class="text" id="par2Text1">
                     Located in the lower North Island, the region is named after its two main rivers.
             </p>
         </div>
-
-
-
         <div style="display: none" class="buttonWrapper">
             <button type="button" class="btn" onclick="displayPage3()" id="region1">Northland</button>
             <button type="button" class="btn" onclick="displayPage3()" id="region1">Auckland</button>
@@ -107,32 +106,8 @@
             
     </article>
 
-    <article style="display: none" class="page" id="page4">
-        <header class="banner" id="page4Banner">
-            
-        </header>
-        <p id="MonthPage4"></p>
-        <p id="RegionPage4"></p>
-        <img id="cityImage"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/New_Auckland_Infobox_Pic_Montage_3.jpg/1024px-New_Auckland_Infobox_Pic_Montage_3.jpg?1566027573028" />
-        <p>
-            Auckland's Population: 1.65 million.
-            climate: subtropical, expect heavy rain between May-December.
-
-            Popular activities in Auckland:
-            Auckland Art Gallery.
-            Walking tours.
-            Auckland Zoo.
-            MOTAT.
-            Maritime Museum.
-
-            Events on in February:
-
-            Mt.Eden Village Wellbeing Market,
-            Voxnova-Gypsy Jazz Concert,
-            Accelerate: Driving New Zealand, a MOTAT exhibition.
-
-        </p>
+    <article style="display: none" id="page4">
+        <div id="imagePage4"></div> 
     </article>
 </body>
 
