@@ -50,10 +50,12 @@
   width: 85%;
   height: 85%;
 }
+
 #cityImage{
   height: auto;
   width:auto;
 }
+
 .imageWrapper{
   position: relative;
   height: 286px;
@@ -61,6 +63,42 @@
   /* width: 100%; */
   background-image: url("1.png");
   /* border-top: 10px solid green;  */
+}
+
+.img301{
+  position: relative;
+  height: 286px;
+  background-size: cover;
+  /* width: 100%; */
+  background-image: url("2.png");
+  /*border-top: 10px solid green;*/
+}
+
+.img302{
+  position: relative;
+  height: 286px;
+  background-size: cover;
+  /* width: 100%; */
+  background-image: url("3.png");
+  /*border-top: 10px solid green;*/
+}
+
+.img303{
+  position: relative;
+  height: 286px;
+  background-size: cover;
+  /* width: 100%; */
+  background-image: url("4.png");
+  /*border-top: 10px solid green;*/
+}
+
+.img304{
+  position: relative;
+  height: 286px;
+  background-size: cover;
+  /* width: 100%; */
+  background-image: url("5.png");
+  /*border-top: 10px solid green;*/
 }
 
 
@@ -154,4 +192,3 @@
   color: #707070;
 }
 
-.
