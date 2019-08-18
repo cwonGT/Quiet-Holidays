@@ -22,22 +22,21 @@
     </button>
     <article class="page" id="page1">
         <header class="banner" id="page1Banner">
-
+            <h2>What time of year are you traveling?</2>
         </header>
-        <p>What time of year are you traveling?</p>
-        <div class="btn-group-vertical">
-            <button type="button" class="btn btn-primary"onclick="setMonthSelected('January'); displayPage2()">January</button>
-            <button type="button" class="btn btn-primary"onclick="setMonthSelected('February'); displayPage2()">February</button>
-            <button type="button" class="btn btn-primary"onclick="setMonthSelected('March'); displayPage2()">March</button>
-            <button type="button" class="btn btn-primary"onclick="setMonthSelected('April'); displayPage2()">April</button>
-            <button type="button" class="btn btn-primary"onclick="setMonthSelected('May'); displayPage2()">May</button>
-            <button type="button" class="btn btn-primary"onclick="setMonthSelected('June'); displayPage2()">June</button>
-            <button type="button" class="btn btn-primary"onclick="setMonthSelected('July'); displayPage2()">July</button>
-            <button type="button" class="btn btn-primary"onclick="setMonthSelected('August'); displayPage2()">August</button>
-            <button type="button" class="btn btn-primary"onclick="setMonthSelected('September'); displayPage2()">September</button>
-            <button type="button" class="btn btn-primary"onclick="setMonthSelected('October'); displayPage2()">October</button>
-            <button type="button" class="btn btn-primary"onclick="setMonthSelected('November'); displayPage2()">November</button>
-            <button type="button" class="btn btn-primary"onclick="setMonthSelected('October'); displayPage2()">December</button>
+        <div class="buttonWrapper">
+            <button type="button" class="btn"onclick="setMonthSelected('January'); displayPage2()">January</button>
+            <button type="button" class="btn"onclick="setMonthSelected('February'); displayPage2()">February</button>
+            <button type="button" class="btn"onclick="setMonthSelected('March'); displayPage2()">March</button>
+            <button type="button" class="btn"onclick="setMonthSelected('April'); displayPage2()">April</button>
+            <button type="button" class="btn"onclick="setMonthSelected('May'); displayPage2()">May</button>
+            <button type="button" class="btn"onclick="setMonthSelected('June'); displayPage2()">June</button>
+            <button type="button" class="btn"onclick="setMonthSelected('July'); displayPage2()">July</button>
+            <button type="button" class="btn"onclick="setMonthSelected('August'); displayPage2()">August</button>
+            <button type="button" class="btn"onclick="setMonthSelected('September'); displayPage2()">September</button>
+            <button type="button" class="btn"onclick="setMonthSelected('October'); displayPage2()">October</button>
+            <button type="button" class="btn"onclick="setMonthSelected('November'); displayPage2()">November</button>
+            <button type="button" class="btn"onclick="setMonthSelected('October'); displayPage2()">December</button>
         </div> 
     </article>
 
@@ -47,12 +46,12 @@
             <h2 id="choose"></h2>
             <h3 id="popularList"></h3>
         </header>
-        <div class="btn-group-vertical">
-            <button type="button" class="btn btn-primary" onclick="displayPage3()" id="region1">Northland</button>
-            <button type="button" class="btn btn-primary" onclick="displayPage3()" id="region1">Auckland</button>
-            <button type="button" class="btn btn-primary" onclick="displayPage3()" id="region1">Wellington</button>
-            <button type="button" class="btn btn-primary" onclick="displayPage3()" id="region1">Otago</button>
-            <button type="button" class="btn btn-primary" onclick="displayPage3()" id="region1">Manawatu-Wanganui</button>
+        <div class="buttonWrapper">
+            <button type="button" class="btn" onclick="displayPage3()" id="region1">Northland</button>
+            <button type="button" class="btn" onclick="displayPage3()" id="region1">Auckland</button>
+            <button type="button" class="btn" onclick="displayPage3()" id="region1">Wellington</button>
+            <button type="button" class="btn" onclick="displayPage3()" id="region1">Otago</button>
+            <button type="button" class="btn" onclick="displayPage3()" id="region1">Manawatu-Wanganui</button>
         </div>
     </article>
 
@@ -62,20 +61,13 @@
             <p id="RegionPage3"></p>
             <h4>These are the most popular cities in the Auckland region.</h4>
         </header>
-        <div class="btn-group-vertical">
-                <button   class="btn btn-primary"onclick="displayPage4()">Wellington</button>
-                <button type="button" class="btn btn-primary"onclick="displayPage4()">Hamilton</button>
-                <button type="button" class="btn btn-primary"onclick="displayPage4()">Christchurch</button>
-                <button type="button" class="btn btn-primary"onclick="displayPage4()">Whangarei</button>
-                <button type="button" class="btn btn-primary"onclick="displayPage4()">Christchurch</button>
+        <div class="buttonWrapper">
+                <button   class="btn"onclick="displayPage4()">Wellington</button>
+                <button type="button" class="btn"onclick="displayPage4()">Hamilton</button>
+                <button type="button" class="btn"onclick="displayPage4()">Christchurch</button>
+                <button type="button" class="btn"onclick="displayPage4()">Whangarei</button>
+                <button type="button" class="btn"onclick="displayPage4()">Christchurch</button>
         </div> 
-        <ol id="cityList" style="display: none">
-            <li><button class="btn btn-primary" onclick="displayPage4()">Auckland</button></li>
-            <li><a href="#" onclick="displayPage4()">Wellington</a></li>
-            <li><a href="#" onclick="displayPage4()">Hamilton</a></li>
-            <li><a href="#" onclick="displayPage4()">Christchurch</a></li>
-            <li><a href="#" onclick="displayPage4()">Whangarei</a></li>
-        </ol>
     </article>
 
     <article style="display: none" class="page" id="page4">
