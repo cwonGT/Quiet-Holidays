@@ -199,6 +199,27 @@
 .banner {
   background-color: #FFE13C;
   color: #707070;
+  font-family: Helvetica;
 }
 
-.
+#cityImage{
+  width: 100vw;
+}
+
+#appName{
+  padding-top: 40px;
+  font-weight: bold;
+  padding-bottom: 10px;
+
+}
+
+#timeQuestion{
+  padding-bottom: 40px;
+}
+
+#imagePage4{  
+  position: relative;
+  height: 1200px;
+  background-size: cover;
+  background-image: url("page4.png");
+}
